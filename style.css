@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: 'Be Vietnam Pro';
+}
+
+html, body{
+  width: 100%;
+  background-color: #000000;
+}
+
+section{
+  width: 1440px;
+  background-color: #ffffff;
+  background-image: url(/images/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+  background-position-x: 120%;
+  background-position-y: -10%;
+  margin: auto;
+}
+
+.first-div{
+  padding: 0 165px;
+  padding-top: 55px;
+  margin-bottom: 130px;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.header ul{
+  display: flex;
+  gap: 30px;
+}
+
+.header ul > li{
+  list-style-type: none;
+  font-size: 12px;
+  font-weight: 600;
+  color: hsl(233, 12%, 13%);
+}
+
+.header button{
+  background-color: hsl(12, 88%, 59%);
+  border: 0;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: 500;
+  color: #ffffff;
+  box-shadow: 0 5px 15px 0 hsl(12, 88%, 59%);
+}
+
+.first-div-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.writeup{
+  width: 39.2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 35px;
+}
+
+.writeup h1{
+  font-size: 50px;
+  color: hsl(233, 12%, 13%);
+}
+
+.writeup p{
+  color: hsl(227, 12%, 61%);
+  width: 77%;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.writeup button{
+  background-color: hsl(12, 88%, 59%);
+  border: 0;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: 500;
+  color: #ffffff;
+  width: 140px;
+  box-shadow: 0 5px 15px 0 hsl(12, 88%, 59%);
+}
+
+.second-div{
+  background-image: url(/images/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+  background-position-x: -60%;
+  background-position-y: 50%;
+}
+
+.upper{
+  display: flex;
+  padding: 0 165px;
+}
+
+.left{
+  display: flex;
+  flex-direction: column;
+}
+
+.left h1{
+  font-size: 35px;
+}
+.testing{
+  width: 600px;
+  height: 600px;
+  display: grid;
+  column-gap: 25px;
+  row-gap: 30px;
+  grid-template-columns: auto auto auto;
+}
+
+.one{
+background-color: hsl(12, 88%, 59%);
+}
+
+.two{
+background-color: hsl(228, 39%, 23%);
+}
+
+.three{
+background-color: hsl(227, 12%, 61%);
+}
+
+.four{
+background-color: hsl(233, 12%, 13%);
+}
+
+.five{
+background-color: hsl(13, 100%, 96%);
+}
+
+.six{
+background-color: hsl(0, 0%, 98%);
+}
