@@ -104,8 +104,10 @@ section{
 .upper{
   display: flex;
   padding: 0 165px;
+  gap: 150px;
 }
 
+/* TRYING TO GET EQUAL WIDTHS IN THE DESIGN AND CODE */
 .left{
   display: flex;
   flex-direction: column;
@@ -113,7 +115,44 @@ section{
 
 .left h1{
   font-size: 35px;
+  margin-bottom: 35px;
 }
+
+.left p{
+  color: hsl(227, 12%, 61%);
+  line-height: 29px;
+}
+
+.right ul{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.right ul li{
+  list-style-type: none;
+}
+
+.right ul li span{
+  padding: 10px 25px;
+  background-color: hsl(12, 88%, 59%);;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 50px;
+  margin-right: 28px;
+}
+
+.right h4{
+  margin-bottom: 30px;
+}
+
+.right p{
+  padding-left: 95px;
+  color: hsl(227, 12%, 61%);
+  font-size: 17px;
+}
+
 .testing{
   width: 600px;
   height: 600px;
