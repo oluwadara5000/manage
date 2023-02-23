@@ -163,6 +163,7 @@ section{
 }
 
 .lower{
+  text-align: center;
   overflow: hidden;
 }
 
@@ -171,50 +172,6 @@ section{
   text-align: center;
   margin-bottom: 70px;
 }
-
-/* .testimonial-container{
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
-
-.testimonial-parent{
-  width: 100vw;
-  display: flex;
-  gap: 30px;
-  overflow-x: hidden;
-}
-
-.testimonial-element{
-  display: flex;
-  text-align: center;
-  gap: 30px;
-}
-
-.testimonial-element div{
-   background-color: #FAFAFA;
-   background-color: red; 
-   padding: 25px;
-   width: 490px;
-   height: 170px;
-}
-
-.testimonial-element div h1{
-  color: hsl(228, 39%, 23%);
-  font-size: 14px;
-  margin: 20px 0;
-}
-
-.testimonial-element div p{
-  color: hsl(227, 12%, 61%);
-  line-height: 25px;
-}
-
-.testimonial-element img{
-  width: 14.5%;
-  height: 42%;
-  margin-top: -50px;
-} */
 
 .testimonial-container {
   display: flex;
@@ -292,6 +249,101 @@ section{
     left: 0%;
   }
 }
+
+.lower button{
+  background-color: hsl(12, 88%, 59%);
+  border: 0;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: 500;
+  color: #ffffff;
+  width: 140px;
+  box-shadow: 0 5px 15px 0 hsl(12, 88%, 59%);
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 180px;
+}
+
+.third-div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 70px 160px;
+  background-color: hsl(12, 88%, 59%);
+}
+
+.third-div h1{
+  width: 435px;
+  font-size: 35px;
+  color: #ffffff;
+}
+
+.third-div button{
+  background-color: #ffffff;
+  border: 0;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: 500;
+  color: hsl(12, 88%, 59%);
+  width: 140px;
+}
+
+.fourth-div{
+  display: flex;
+  align-items: center;
+  background-color: #1E1E26;
+  padding: 70px 160px;
+  gap: 145px;
+}
+
+.icons-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 120px;
+}
+
+.icons{
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons i{
+  color: #ffffff;
+}
+
+.links-container{
+  display: flex;
+  gap: 215px;
+}
+
+.links-container div{
+display: flex;
+flex-direction: column;
+gap: 20px;
+width: max-content;
+color: #ffffff;
+} 
+
+form{
+display: flex;
+gap: 15px;
+}
+
+input{
+  padding: 15px;
+  border-radius: 50px;
+  border: 0;
+}
+
+form button{
+  padding: 0 25px;
+  border-radius: 50px;
+  background-color: hsl(12, 88%, 59%);
+  color: #ffffff;
+}
+
+/* FORM VALIDATION IS WHERE YOU ARE */
 
 .testing{
   width: 600px;
