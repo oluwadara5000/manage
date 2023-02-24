@@ -343,6 +343,11 @@ form button{
   color: #ffffff;
 }
 
+.c-error .c-validation{
+  background-color: aqua;
+}
+
+
 /* FORM VALIDATION IS WHERE YOU ARE */
 
 .testing{
