@@ -20,6 +20,7 @@ section{
   background-position-x: 120%;
   background-position-y: -10%;
   margin: auto;
+  cursor: pointer;
 }
 
 .first-div{
@@ -45,6 +46,10 @@ section{
   font-size: 12px;
   font-weight: 600;
   color: hsl(233, 12%, 13%);
+}
+
+.header ul > li:hover{
+  color: hsl(227, 12%, 61%);
 }
 
 .header button{
@@ -312,6 +317,10 @@ section{
   color: #ffffff;
 }
 
+.icons i:hover{
+  color: hsl(12, 88%, 59%);
+}
+
 .links-container{
   display: flex;
   gap: 215px;
@@ -325,6 +334,10 @@ width: max-content;
 color: #ffffff;
 } 
 
+.links-container p:hover{
+color: hsl(12, 88%, 59%);
+}
+
 form{
 display: flex;
 gap: 15px;
@@ -336,6 +349,10 @@ input{
   border: 0;
 }
 
+input:focus{
+  outline: none;
+}
+
 form button{
   padding: 0 25px;
   border-radius: 50px;
@@ -343,10 +360,28 @@ form button{
   color: #ffffff;
 }
 
-.c-error .c-validation{
-  background-color: aqua;
+.updates span{
+  color: hsl(12, 88%, 59%);
+  font-style: italic;
+  font-size: 10px;
+  padding-left: 10px;
 }
 
+.updates p{
+  color: hsl(13, 100%, 96%);
+  font-size: 15px;
+  margin-top: 80px;
+}
+
+.header button:hover, .writeup button:hover, .lower button:hover, form button:hover{
+  cursor: pointer;
+  background-color: #F98F75;
+}
+
+.third-div button:hover{
+  cursor: pointer;
+  color: #eeaa99;
+}
 
 /* FORM VALIDATION IS WHERE YOU ARE */
 
