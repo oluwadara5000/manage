@@ -36,6 +36,10 @@ section{
   margin-bottom: 120px;
 }
 
+.header i{
+  display: none;
+}
+
 .header ul{
   display: flex;
   gap: 30px;
@@ -103,7 +107,7 @@ section{
   background-image: url(/images/bg-tablet-pattern.svg);
   background-repeat: no-repeat;
   background-position-x: -60%;
-  background-position-y: 50%;
+  background-position-y: 70%;
 }
 
 .upper{
@@ -368,7 +372,7 @@ form button{
 }
 
 .updates p{
-  color: hsl(13, 100%, 96%);
+  color: hsl(227, 12%, 61%);;
   font-size: 15px;
   margin-top: 80px;
 }
@@ -383,37 +387,153 @@ form button{
   color: #eeaa99;
 }
 
-/* FORM VALIDATION IS WHERE YOU ARE */
-
-.testing{
-  width: 600px;
-  height: 600px;
-  display: grid;
-  column-gap: 25px;
-  row-gap: 30px;
-  grid-template-columns: auto auto auto;
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* MEDIA QUERIES */
+/* FOR SCREENS 374px and BELOW */
+@media screen and (max-width: 374px) {
+section{
+  width: 100%;
 }
 
-.one{
-background-color: hsl(12, 88%, 59%);
+.first-div{
+  padding: 0;
+  padding-top: 40px;
+  margin-bottom: 105px;
 }
 
-.two{
-background-color: hsl(228, 39%, 23%);
+.header{
+  padding: 0 15px;
+  margin-bottom: 55px;
 }
 
-.three{
-background-color: hsl(227, 12%, 61%);
+.header ul, .header button{
+  display: none;
 }
 
-.four{
-background-color: hsl(233, 12%, 13%);
+.header i{
+  display: flex;
 }
 
-.five{
-background-color: hsl(13, 100%, 96%);
+.first-div-content{
+  flex-direction: column-reverse;
+  padding: 0 15px;
 }
 
-.six{
-background-color: hsl(0, 0%, 98%);
+.illustration{
+  width: 100%;
+}
+
+.illustration img{
+  width: inherit;
+}
+
+.writeup{
+  width: 100%;
+  align-items: center;
+
+}
+
+.writeup h1{
+  text-align: center;
+  font-size: 35px;
+}
+
+.writeup p{
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+}
+
+.upper{
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 55px;
+}
+
+.left{
+  margin: 0;
+  padding: 0 20px;
+}
+
+.left p{
+  width: 100%;
+  font-size: 15px;
+}
+
+.right ul{
+  margin: 0;
+}
+
+.right ul li{
+  padding-left: 10px;
+}
+
+.right h4{
+  margin-bottom: 15px;
+  background-color: #FFF0EB;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.right p{
+  padding: 0;
+  text-align: start;
+  line-height: 30px;
+  font-size: 14px;
+  /* padding: 0 15px; */
+}
+
+.right ul li span{
+  margin-right: 0;
+}
+}
+
+/* DONE TILL THE SECOND DIV LIST PART. TIME TO CODE THE TESTIMONIAL PART FOR MOBILE SCREENS */
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* FOR SCREENS FROM 375px TO 767px */
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
 }
