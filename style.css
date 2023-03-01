@@ -150,7 +150,7 @@ section{
 
 .right ul li span{
   padding: 10px 25px;
-  background-color: hsl(12, 88%, 59%);;
+  background-color: hsl(12, 88%, 59%);
   color: #ffffff;
   font-size: 14px;
   font-weight: 400;
@@ -414,6 +414,7 @@ form button{
 @media screen and (max-width: 374px) {
 section{
   width: 100%;
+  text-align: center;
 }
 
 .first-div{
@@ -470,6 +471,7 @@ section{
   align-items: center;
   text-align: center;
   gap: 55px;
+  /* margin: 0; */
 }
 
 .left{
@@ -509,9 +511,82 @@ section{
 .right ul li span{
   margin-right: 0;
 }
+
+.testimonial-container{
+  display: none;
 }
 
-/* DONE TILL THE SECOND DIV LIST PART. TIME TO CODE THE TESTIMONIAL PART FOR MOBILE SCREENS */
+.testimonial-container-mobile{
+  display: flex;
+  /* gap: 30px; */
+  width: 1440px;
+}
+
+.testimonial-card{
+  padding: 0 15px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  background-color: #FAFAFA;
+}
+
+.avatar-mobile{
+  width: 70px;
+  margin: auto;
+  margin-top: -40px;
+}
+
+.avatar-mobile img{
+  width: inherit;
+}
+
+.name{
+  color: hsl(228, 39%, 23%);
+  font-size: 12px;
+}
+
+.statement{
+  margin-bottom: 30px;
+}
+
+.statement p{
+  line-height: 25px;
+  color: hsl(227, 12%, 61%);
+}
+
+.indicators{
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.indicators span{
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  border: 1px solid hsl(12, 88%, 59%);
+}
+
+#mobile-button{
+  background-color: hsl(12, 88%, 59%);
+  border: 0;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: 500;
+  color: #ffffff;
+  width: 140px;
+  box-shadow: 0 5px 15px 0 hsl(12, 88%, 59%);
+  margin-bottom: 40px;
+}
+
+#one{
+  background-color: hsl(12, 88%, 59%);
+}
+}
+
+/* DONE THE MOBILE TESTIMONIAL. TIME TO FINISH THE MDEIA QUERIES FOR MAX WIDTH 374PX */
 
 /*  */
 /*  */
