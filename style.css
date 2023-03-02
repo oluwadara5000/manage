@@ -1,18 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  font-family: 'Be Vietnam Pro';
+  font-family: "Be Vietnam Pro";
 }
 
-html, body{
+html,
+body {
   width: 100%;
   background-color: #000000;
 }
 
-section{
+section {
   width: 1440px;
   background-color: #ffffff;
   background-image: url(/images/bg-tablet-pattern.svg);
@@ -23,40 +24,81 @@ section{
   cursor: pointer;
 }
 
-.first-div{
+.first-div {
   padding: 0 165px;
   padding-top: 55px;
   margin-bottom: 130px;
 }
 
-.header{
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 120px;
+  position: relative;
 }
 
-.header i{
+.header i {
   display: none;
+  position: absolute;
+  right: 0;
+  font-size: 20px;
+  margin-right: 15px;
+  z-index: 1000;
 }
 
-.header ul{
+.header ul {
   display: flex;
   gap: 30px;
 }
 
-.header ul > li{
+.blur {
+  height: 300vh;
+  background-color: black;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+}
+
+.panel {
+  position: absolute;
+  background-color: #ffffff;
+  text-align: center;
+  width: 325px;
+  height: 0;
+  left: 50%;
+  margin-left: -162.5px;
+  top: 13%;
+  transition: 0.3s ease-in;
+}
+
+.panel-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: inherit;
+  display: none;
+}
+
+.panel-list li {
+  font-size: 15px;
+  list-style-type: none;
+  color: hsl(228, 39%, 23%);
+  font-weight: 600;
+}
+
+.header ul > li {
   list-style-type: none;
   font-size: 12px;
   font-weight: 600;
   color: hsl(233, 12%, 13%);
 }
 
-.header ul > li:hover{
+.header ul > li:hover {
   color: hsl(227, 12%, 61%);
 }
 
-.header button{
+.header button {
   background-color: hsl(12, 88%, 59%);
   border: 0;
   padding: 15px 30px;
@@ -66,13 +108,13 @@ section{
   box-shadow: 0 5px 15px 0 hsl(12, 88%, 59%);
 }
 
-.first-div-content{
+.first-div-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.writeup{
+.writeup {
   width: 39.2%;
   display: flex;
   flex-direction: column;
@@ -80,19 +122,19 @@ section{
   gap: 35px;
 }
 
-.writeup h1{
+.writeup h1 {
   font-size: 50px;
   color: hsl(233, 12%, 13%);
 }
 
-.writeup p{
+.writeup p {
   color: hsl(227, 12%, 61%);
   width: 77%;
   font-size: 15px;
   line-height: 25px;
 }
 
-.writeup button{
+.writeup button {
   background-color: hsl(12, 88%, 59%);
   border: 0;
   padding: 15px 30px;
@@ -103,52 +145,51 @@ section{
   box-shadow: 0 5px 15px 0 hsl(12, 88%, 59%);
 }
 
-.second-div{
+.second-div {
   background-image: url(/images/bg-tablet-pattern.svg);
   background-repeat: no-repeat;
   background-position-x: -60%;
   background-position-y: 70%;
 }
 
-.upper{
+.upper {
   display: flex;
   gap: 150px;
   justify-content: center;
   margin-bottom: 155px;
 }
 
-
-.left{
+.left {
   display: flex;
   flex-direction: column;
   margin-left: 165px;
 }
 
-.left h1{
+.left h1 {
   font-size: 35px;
   margin-bottom: 35px;
   color: hsl(228, 39%, 23%);
 }
 
-.left p{
+.left p {
   color: hsl(227, 12%, 61%);
   line-height: 25px;
   width: 73.6%;
   font-size: 14px;
 }
 
-.right ul{
+.right ul {
   display: flex;
   flex-direction: column;
   gap: 50px;
   margin-right: 165px;
 }
 
-.right ul li{
+.right ul li {
   list-style-type: none;
 }
 
-.right ul li span{
+.right ul li span {
   padding: 10px 25px;
   background-color: hsl(12, 88%, 59%);
   color: #ffffff;
@@ -158,12 +199,12 @@ section{
   margin-right: 28px;
 }
 
-.right h4{
+.right h4 {
   margin-bottom: 30px;
   color: hsl(228, 39%, 23%);
 }
 
-.right p{
+.right p {
   padding-left: 95px;
   color: hsl(227, 12%, 61%);
   font-size: 17px;
@@ -171,12 +212,16 @@ section{
   line-height: 25px;
 }
 
-.lower{
+.lower {
   text-align: center;
   overflow: hidden;
 }
 
-.lower > h1{
+#mobile-button {
+  display: none;
+}
+
+.lower > h1 {
   font-size: 35px;
   text-align: center;
   margin-bottom: 70px;
@@ -185,16 +230,18 @@ section{
 .testimonial-container {
   display: flex;
   align-items: center;
-  /* height: 100vh; */
   width: 100vw;
   overflow: hidden;
+}
+
+.testimonial-container-mobile {
+  display: none;
 }
 
 .testimonial-parent {
   position: relative;
   width: 100vw;
   height: 20rem;
-  /* padding: 2rem 0; */
   overflow-x: hidden;
 }
 
@@ -208,21 +255,20 @@ section{
   align-items: center;
   justify-content: space-around;
   gap: 30px;
-  
 }
 
-.testimonial-element div{
+.testimonial-element div {
   text-align: center;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   padding: 25px;
 }
 
-.testimonial-element div h1{
+.testimonial-element div h1 {
   color: hsl(228, 39%, 23%);
   margin: 25px 0;
 }
 
-.testimonial-element div p{
+.testimonial-element div p {
   color: hsl(227, 12%, 61%);
   font-size: 15px;
   line-height: 25px;
@@ -235,7 +281,7 @@ section{
 .primary {
   animation: primary 30s linear infinite;
 }
-  
+
 .secondary {
   animation: secondary 30s linear infinite;
   margin-left: 30px;
@@ -259,7 +305,7 @@ section{
   }
 }
 
-.lower button{
+.lower button {
   background-color: hsl(12, 88%, 59%);
   border: 0;
   padding: 15px 30px;
@@ -273,7 +319,7 @@ section{
   margin-bottom: 180px;
 }
 
-.third-div{
+.third-div {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -281,13 +327,13 @@ section{
   background-color: hsl(12, 88%, 59%);
 }
 
-.third-div h1{
+.third-div h1 {
   width: 435px;
   font-size: 35px;
   color: #ffffff;
 }
 
-.third-div button{
+.third-div button {
   background-color: #ffffff;
   border: 0;
   padding: 15px 30px;
@@ -297,92 +343,99 @@ section{
   width: 140px;
 }
 
-.fourth-div{
+.fourth-div {
   display: flex;
   align-items: center;
-  background-color: #1E1E26;
+  background-color: #1e1e26;
   padding: 70px 160px;
   gap: 145px;
 }
 
-.icons-container{
+.icons-container p {
+  display: none;
+}
+
+.icons-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 120px;
 }
 
-.icons{
+.icons {
   display: flex;
   justify-content: space-between;
 }
 
-.icons i{
+.icons i {
   color: #ffffff;
 }
 
-.icons i:hover{
+.icons i:hover {
   color: hsl(12, 88%, 59%);
 }
 
-.links-container{
+.links-container {
   display: flex;
   gap: 215px;
 }
 
-.links-container div{
-display: flex;
-flex-direction: column;
-gap: 20px;
-width: max-content;
-color: #ffffff;
-} 
-
-.links-container p:hover{
-color: hsl(12, 88%, 59%);
+.links-container div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: max-content;
+  color: #ffffff;
 }
 
-form{
-display: flex;
-gap: 15px;
+.links-container p:hover {
+  color: hsl(12, 88%, 59%);
 }
 
-input{
+form {
+  display: flex;
+  gap: 15px;
+}
+
+input {
   padding: 15px;
   border-radius: 50px;
   border: 0;
 }
 
-input:focus{
+input:focus {
   outline: none;
 }
 
-form button{
+form button {
   padding: 0 25px;
   border-radius: 50px;
   background-color: hsl(12, 88%, 59%);
   color: #ffffff;
 }
 
-.updates span{
+.updates span {
   color: hsl(12, 88%, 59%);
   font-style: italic;
   font-size: 10px;
   padding-left: 10px;
 }
 
-.updates p{
-  color: hsl(227, 12%, 61%);;
+.updates p {
+  color: hsl(227, 12%, 61%);
   font-size: 15px;
   margin-top: 80px;
 }
 
-.header button:hover, .writeup button:hover, .lower button:hover, form button:hover{
+.header button:hover,
+.writeup button:hover,
+.lower button:hover,
+form button:hover {
   cursor: pointer;
-  background-color: #F98F75;
+  background-color: #f98f75;
 }
 
-.third-div button:hover{
+.third-div button:hover {
   cursor: pointer;
   color: #eeaa99;
 }
@@ -412,178 +465,274 @@ form button{
 /* MEDIA QUERIES */
 /* FOR SCREENS 374px and BELOW */
 @media screen and (max-width: 374px) {
-section{
-  width: 100%;
-  text-align: center;
-}
+  section {
+    width: 100%;
+    text-align: center;
+    background-position-x: -200%;
+    background-position-y: -2%;
+    background-size: 110%;
+  }
 
-.first-div{
-  padding: 0;
-  padding-top: 40px;
-  margin-bottom: 105px;
-}
+  .first-div {
+    padding: 0;
+    padding-top: 40px;
+    margin-bottom: 105px;
+  }
 
-.header{
-  padding: 0 15px;
-  margin-bottom: 55px;
-}
+  .header {
+    padding: 0 15px;
+    margin-bottom: 55px;
+  }
 
-.header ul, .header button{
-  display: none;
-}
+  .blur {
+    width: 100%;
+  }
 
-.header i{
-  display: flex;
-}
+  .header ul,
+  .header button {
+    display: none;
+  }
 
-.first-div-content{
-  flex-direction: column-reverse;
-  padding: 0 15px;
-}
+  .header i {
+    display: flex;
+  }
 
-.illustration{
-  width: 100%;
-}
+  .first-div-content {
+    flex-direction: column-reverse;
+    padding: 0 15px;
+  }
 
-.illustration img{
-  width: inherit;
-}
+  .illustration {
+    width: 100%;
+  }
 
-.writeup{
-  width: 100%;
-  align-items: center;
+  .illustration img {
+    width: inherit;
+  }
 
-}
+  .writeup {
+    width: 100%;
+    align-items: center;
+  }
 
-.writeup h1{
-  text-align: center;
-  font-size: 35px;
-}
+  .writeup h1 {
+    text-align: center;
+    font-size: 35px;
+  }
 
-.writeup p{
-  text-align: center;
-  width: 100%;
-  font-size: 18px;
-}
+  .writeup p {
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+  }
 
-.upper{
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 55px;
-  /* margin: 0; */
-}
+  .second-div {
+    background-position-x: 500%;
+    background-position-y: 2%;
+    background-size: 110%;
+  }
 
-.left{
-  margin: 0;
-  padding: 0 20px;
-}
+  .upper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 55px;
+  }
 
-.left p{
-  width: 100%;
-  font-size: 15px;
-}
+  .left {
+    margin: 0;
+    padding: 0 20px;
+  }
 
-.right ul{
-  margin: 0;
-}
+  .left p {
+    width: 100%;
+    font-size: 15px;
+  }
 
-.right ul li{
-  padding-left: 10px;
-}
+  .right ul {
+    margin: 0;
+  }
 
-.right h4{
-  margin-bottom: 15px;
-  background-color: #FFF0EB;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
+  .right ul li {
+    padding-left: 10px;
+  }
 
-.right p{
-  padding: 0;
-  text-align: start;
-  line-height: 30px;
-  font-size: 14px;
-  /* padding: 0 15px; */
-}
+  .right h4 {
+    margin-bottom: 15px;
+    background-color: #fff0eb;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
 
-.right ul li span{
-  margin-right: 0;
-}
+  .right p {
+    padding: 0;
+    text-align: start;
+    line-height: 30px;
+    font-size: 14px;
+  }
 
-.testimonial-container{
-  display: none;
-}
+  .right ul li span {
+    margin-right: 0;
+  }
 
-.testimonial-container-mobile{
-  display: flex;
-  /* gap: 30px; */
-  width: 1440px;
-}
+  .testimonial-container {
+    display: none;
+  }
 
-.testimonial-card{
-  padding: 0 15px;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  background-color: #FAFAFA;
-}
+  .testimonial-container-mobile {
+    display: flex;
+    width: 1440px;
+  }
 
-.avatar-mobile{
-  width: 70px;
-  margin: auto;
-  margin-top: -40px;
-}
+  .testimonial-card {
+    padding: 0 15px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: #fafafa;
+  }
 
-.avatar-mobile img{
-  width: inherit;
-}
+  .avatar-mobile {
+    width: 70px;
+    margin: auto;
+    margin-top: -40px;
+  }
 
-.name{
-  color: hsl(228, 39%, 23%);
-  font-size: 12px;
-}
+  .avatar-mobile img {
+    width: inherit;
+  }
 
-.statement{
-  margin-bottom: 30px;
-}
+  .name {
+    color: hsl(228, 39%, 23%);
+    font-size: 12px;
+  }
 
-.statement p{
-  line-height: 25px;
-  color: hsl(227, 12%, 61%);
-}
+  .statement {
+    margin-bottom: 30px;
+  }
 
-.indicators{
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-  margin-bottom: 20px;
-}
+  .statement p {
+    line-height: 25px;
+    color: hsl(227, 12%, 61%);
+  }
 
-.indicators span{
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  border: 1px solid hsl(12, 88%, 59%);
-}
+  .indicators {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+    z-index: 1000;
+  }
 
-#mobile-button{
-  background-color: hsl(12, 88%, 59%);
-  border: 0;
-  padding: 15px 30px;
-  border-radius: 50px;
-  font-weight: 500;
-  color: #ffffff;
-  width: 140px;
-  box-shadow: 0 5px 15px 0 hsl(12, 88%, 59%);
-  margin-bottom: 40px;
-}
+  .indicators span {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    border: 1px solid hsl(12, 88%, 59%);
+    z-index: 1000;
+  }
 
-#one{
-  background-color: hsl(12, 88%, 59%);
-}
+  #mobile-button {
+    background-color: hsl(12, 88%, 59%);
+    border: 0;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #ffffff;
+    width: 140px;
+    box-shadow: 0 5px 15px 0 hsl(12, 88%, 59%);
+    margin-bottom: 40px;
+  }
+
+  #one {
+    background-color: hsl(12, 88%, 59%);
+  }
+
+  .third-div {
+    flex-direction: column;
+    padding: 100px 20px;
+    gap: 35px;
+  }
+
+  .third-div h1 {
+    font-size: 40px;
+    width: 100%;
+  }
+
+  .fourth-div {
+    flex-direction: column-reverse;
+    padding: 0;
+    gap: 60px;
+    text-align: center;
+  }
+
+  .updates p {
+    display: none;
+  }
+
+  .updates button {
+    border: 0;
+  }
+
+  .icons-container p {
+    color: hsl(227, 12%, 61%);
+    font-size: 15px;
+    display: flex;
+    margin: auto;
+  }
+
+  .updates {
+    width: 100%;
+    padding-top: 50px;
+    text-align: left;
+  }
+
+  form {
+    padding: 0 20px;
+  }
+
+  input {
+    width: 80%;
+  }
+
+  .updates span {
+    padding-left: 40px;
+  }
+
+  .links-container {
+    gap: 100px;
+  }
+
+  .links-container div {
+    text-align: left;
+  }
+
+  .links-container p {
+    font-size: 14px;
+  }
+
+  .icons-container {
+    flex-direction: column-reverse;
+    width: 100%;
+    gap: 45px;
+    padding-bottom: 35px;
+  }
+
+  .icons {
+    width: 80%;
+    margin: auto;
+  }
+
+  .icons i {
+    font-size: 40px;
+  }
+
+  .icons-container img {
+    width: 160px;
+    margin: auto;
+  }
 }
 
 /* DONE THE MOBILE TESTIMONIAL. TIME TO FINISH THE MDEIA QUERIES FOR MAX WIDTH 374PX */
@@ -611,4 +760,301 @@ section{
 /* FOR SCREENS FROM 375px TO 767px */
 
 @media screen and (min-width: 375px) and (max-width: 767px) {
+  section {
+    width: 98%;
+    text-align: center;
+    background-position-x: -200%;
+    background-position-y: -2%;
+    background-size: 110%;
+    margin: auto;
+  }
+
+  .first-div {
+    padding: 0;
+    padding-top: 40px;
+    margin-bottom: 105px;
+  }
+
+  .blur {
+    width: 98%;
+  }
+
+  .header {
+    padding: 0 15px;
+    margin-bottom: 55px;
+  }
+
+  .header ul,
+  .header button {
+    display: none;
+  }
+
+  .header i {
+    display: flex;
+  }
+
+  .first-div-content {
+    flex-direction: column-reverse;
+    padding: 0 15px;
+  }
+
+  .illustration {
+    width: 375px;
+  }
+
+  .illustration img {
+    width: inherit;
+  }
+
+  .writeup {
+    width: 100%;
+    align-items: center;
+  }
+
+  .writeup h1 {
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .writeup p {
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .second-div {
+    background-position-x: 500%;
+    background-position-y: 2%;
+    background-size: 110%;
+  }
+
+  .upper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 55px;
+  }
+
+  .left {
+    margin: 0;
+    padding: 0 20px;
+  }
+
+  .left p {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .right ul {
+    margin: 0;
+  }
+
+  .right ul li {
+    padding-left: 10px;
+  }
+
+  .right h4 {
+    margin-bottom: 15px;
+    background-color: #fff0eb;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .right p {
+    padding: 0;
+    text-align: start;
+    line-height: 30px;
+    font-size: 14px;
+  }
+
+  .right ul li span {
+    margin-right: 0;
+  }
+
+  .testimonial-container {
+    display: none;
+  }
+
+  .testimonial-container-mobile {
+    display: flex;
+    width: 1440px;
+  }
+
+  .testimonial-card {
+    padding: 0 15px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: #fafafa;
+    width: 345px;
+    left: 50%;
+    margin-left: -187.5px;
+  }
+
+  .avatar-mobile {
+    width: 70px;
+    margin: auto;
+    margin-top: -40px;
+  }
+
+  .avatar-mobile img {
+    width: inherit;
+  }
+
+  .name {
+    color: hsl(228, 39%, 23%);
+    font-size: 12px;
+  }
+
+  .statement {
+    margin-bottom: 30px;
+  }
+
+  .statement p {
+    line-height: 25px;
+    color: hsl(227, 12%, 61%);
+  }
+
+  .indicators {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+    z-index: 1000;
+  }
+
+  .indicators span {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    border: 1px solid hsl(12, 88%, 59%);
+    z-index: 1000;
+  }
+
+  #mobile-button {
+    background-color: hsl(12, 88%, 59%);
+    border: 0;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #ffffff;
+    width: 140px;
+    box-shadow: 0 5px 15px 0 hsl(12, 88%, 59%);
+    margin-bottom: 40px;
+  }
+
+  #one {
+    background-color: hsl(12, 88%, 59%);
+  }
+
+  .third-div {
+    flex-direction: column;
+    padding: 100px 20px;
+    gap: 35px;
+  }
+
+  .third-div h1 {
+    font-size: 40px;
+    width: 100%;
+  }
+
+  .fourth-div {
+    flex-direction: column-reverse;
+    padding: 0;
+    gap: 60px;
+    text-align: center;
+  }
+
+  .updates p {
+    display: none;
+  }
+
+  .updates button {
+    border: 0;
+  }
+
+  .icons-container p {
+    color: hsl(227, 12%, 61%);
+    font-size: 15px;
+    display: flex;
+    margin: auto;
+  }
+
+  .updates {
+    width: 100%;
+    padding-top: 50px;
+    text-align: left;
+  }
+
+  form {
+    padding: 0 20px;
+  }
+
+  input {
+    width: 80%;
+  }
+
+  .updates span {
+    padding-left: 40px;
+  }
+
+  .links-container {
+    gap: 100px;
+  }
+
+  .links-container div {
+    text-align: left;
+  }
+
+  .links-container p {
+    font-size: 14px;
+  }
+
+  .icons-container {
+    flex-direction: column-reverse;
+    width: 100%;
+    gap: 45px;
+    padding-bottom: 35px;
+  }
+
+  .icons {
+    width: 80%;
+    margin: auto;
+  }
+
+  .icons i {
+    font-size: 40px;
+  }
+
+  .icons-container img {
+    width: 160px;
+    margin: auto;
+  }
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* FOR SCREENS FROM 768px TO 1439px */
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
 }

@@ -8,9 +8,16 @@ const two = document.getElementById("two");
 const three = document.getElementById("three");
 const four = document.getElementById("four");
 
+const open = document.getElementById("open");
+const close = document.getElementById("close");
+const panel = document.getElementById("panel");
+const panelList = document.getElementById("panel-list");
+const blur = document.getElementById("blur");
+
 ali.style.display = "none"
 richard.style.display = "none"
 shanai.style.display = "none";
+close.style.display = "none";
 
 
 one.addEventListener("click", function () {
@@ -56,5 +63,23 @@ four.addEventListener("click", function () {
   one.style.backgroundColor = "#ffffff";
   two.style.backgroundColor = "#ffffff";
   three.style.backgroundColor = "#ffffff";
+});
+
+open.addEventListener("click", function () {
+  open.style.display = "none"
+  close.style.display = "block"
+  panel.style.height = "200px"
+  panel.style.padding = "45px 0"
+  panelList.style.display = "flex"
+  blur.style.opacity = "0.5"
+});
+
+close.addEventListener("click", function () {
+  open.style.display = "block"
+  close.style.display = "none"
+  panel.style.height = "0"
+  panel.style.padding = "0"
+  panelList.style.display = "none"
+  blur.style.opacity = "0"
 });
 
