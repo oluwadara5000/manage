@@ -635,6 +635,7 @@ form button:hover {
   }
 
   #mobile-button {
+    display: block;
     background-color: hsl(12, 88%, 59%);
     border: 0;
     padding: 15px 30px;
@@ -643,6 +644,7 @@ form button:hover {
     color: #ffffff;
     width: 140px;
     box-shadow: 0 5px 15px 0 hsl(12, 88%, 59%);
+    margin: auto;
     margin-bottom: 40px;
   }
 
@@ -735,7 +737,6 @@ form button:hover {
   }
 }
 
-/* DONE THE MOBILE TESTIMONIAL. TIME TO FINISH THE MDEIA QUERIES FOR MAX WIDTH 374PX */
 
 /*  */
 /*  */
@@ -934,6 +935,7 @@ form button:hover {
   }
 
   #mobile-button {
+    display: block;
     background-color: hsl(12, 88%, 59%);
     border: 0;
     padding: 15px 30px;
@@ -942,6 +944,7 @@ form button:hover {
     color: #ffffff;
     width: 140px;
     box-shadow: 0 5px 15px 0 hsl(12, 88%, 59%);
+    margin: auto;
     margin-bottom: 40px;
   }
 
@@ -1057,4 +1060,243 @@ form button:hover {
 /* FOR SCREENS FROM 768px TO 1439px */
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
+  section{
+    width: 98%;
+    margin: auto;
+    text-align: center;
+    background-position-x: -200%;
+    background-position-y: -2%;
+    background-size: 110%;
+  }
+
+  .first-div{
+    padding: 0;
+    padding-top: 40px;
+    margin-bottom: 105px;
+  }
+
+  .blur{
+    display: none;
+  }
+
+  .header{
+    justify-content: space-evenly;
+  }
+
+  .first-div-content{
+    flex-direction: column-reverse;
+  }
+
+  .illustration{
+    margin-bottom: 30px;
+  }
+
+  .writeup{
+    width: 100%;
+    text-align: center;
+  }
+
+  .writeup h1{
+    padding: 0 15px;
+  }
+
+  .writeup p{
+    width: 77%;
+    font-size: 25px;
+    margin: auto;
+  }
+
+  .writeup button{
+    margin: auto;
+  }
+
+  .second-div{
+    background-position-x: 500%;
+    background-position-y: 2%;
+    background-size: 110%;
+  }
+
+  .upper{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 55px;
+  }
+
+  .left{
+    margin: 0;
+    width: 80%;
+  }
+
+  .left p{
+    font-size: 20px;
+    line-height: 30px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .right{
+    width: 80%;
+  }
+
+  .right ul {
+    margin: 0;
+  }
+
+  .right ul li {
+    padding-left: 10px;
+    text-align: left;
+  }
+
+  .right h4 {
+    margin-bottom: 15px;
+    background-color: #fff0eb;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .right p {
+    padding: 0;
+    text-align: start;
+    line-height: 30px;
+    font-size: 20px;
+  }
+
+  .right ul li span {
+    margin-right: 0;
+  }
+
+  .testimonial-element div{
+    padding: 0;
+    padding: 10px 0;
+  }
+
+  .testimonial-element div h1{
+    font-size: 18px;
+    margin: 10px 0;
+  }
+
+  .testimonial-element div p{
+    font-size: 10px;
+    padding: 0 10px;
+    line-height: 15px;
+  }
+
+  .third-div{
+    padding: 50px 80px;
+  }
+
+  .fourth-div{
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+
+  .updates{
+    width: 100%;
+    text-align: left;
+  }
+
+  input{
+    width: 70%;
+  }
+
+  .updates p {
+    display: none;
+  }
+
+  .icons-container p {
+    color: hsl(227, 12%, 61%);
+    font-size: 15px;
+    display: flex;
+    margin: auto;
+  }
+
+  .links-container{
+    gap: 150px;
+  }
+
+  .links-container div{
+    text-align: left;
+  }
+
+  .icons-container {
+    flex-direction: column-reverse;
+    width: 100%;
+    gap: 45px;
+    padding-bottom: 35px;
+  }
+
+  .icons {
+    width: 80%;
+    margin: auto;
+  }
+
+  .icons i {
+    font-size: 40px;
+  }
+
+  .icons-container img {
+    width: 160px;
+    margin: auto;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  section{
+    background-position-x: -200%;
+    background-position-y: -2%;
+    background-size: 110%;
+  }
+
+  .second-div{
+    background-position-x: 500%;
+    background-position-y: 2%;
+    background-size: 110%;
+  }
+}
+
+
+@media screen and (min-width: 901px) and (max-width: 1099px) {
+  section{
+    background-position-x: right;
+    background-position-y: -2%;
+    background-size: 90%;
+  }
+
+  .second-div{
+    background-position-x: left;
+    background-position-y: 2%;
+    background-size: 90%;
+  }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1299px) {
+  section{
+    background-position-x: right;
+    background-position-y: -2%;
+    background-size: 70%;
+  }
+
+  .second-div{
+    background-position-x: left;
+    background-position-y: 2%;
+    background-size: 70%;
+  }
+}
+
+
+@media screen and (min-width: 1300px) and (max-width: 1439px) {
+  section{
+    background-position-x: right;
+    background-position-y: -2%;
+    background-size: 60%;
+  }
+
+  .second-div{
+    background-position-x: left;
+    background-position-y: 2%;
+    background-size: 60%;
+  }
 }
