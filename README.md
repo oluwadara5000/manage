@@ -40,7 +40,6 @@ Users should be able to:
 ## My process
 
 ### Built with
-
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
@@ -84,6 +83,5 @@ Users should be able to:
 ```
 
 ## Author
-
 - Website - [Odejobi Oluwadara](https://github.com/oluwadara5000)
 - Frontend Mentor - [@oluwadara5000](https://www.frontendmentor.io/profile/oluwadara5000)
